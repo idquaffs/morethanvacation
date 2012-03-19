@@ -41,20 +41,24 @@ class SiteController extends Controller
 				$this->pageTitle = 'First Page';
 				$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']); 
 				$this->render('login');
-			}	  
+				exit;
+			}
 		} else {
 			// No user, print a link for the user to login
 			$this->pageTitle = 'First Page';
 			$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']);
 			$this->render('login',array('login_url',$login_url));
+			exit;
 		}
 		
 		if ( !empty($_POST) ) {
 			$this->render('success');
+			exit;
 		}
 		$this->render('form',array(
 			'user_profile'=>$user_profile,
 		));
+		exit;
 	}
 
 	/**
