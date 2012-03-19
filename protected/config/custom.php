@@ -2,7 +2,7 @@
 return CMap::mergeArray(
 	require('main.php'),
 	array(
-		'name'=>'',
+		'name'=>'More Than Vacation',
 		'modules'=>array(
 			'admin'=>array(),
 		),'import'=>array(

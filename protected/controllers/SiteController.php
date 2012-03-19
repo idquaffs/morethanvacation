@@ -35,22 +35,25 @@ class SiteController extends Controller
 			try {
 
 				$user_profile = $facebook->api('/me','GET');
-				echo "Name: " . $user_profile['name'];
+//				echo "Name: " . $user_profile['name'];
 
 			} catch(FacebookApiException $e) {
-
+				$this->pageTitle = 'First Page';
 				$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']); 
-				echo '1 Please <a href="' . $login_url . '">login.</a>';
+				$this->render('login');
 			}	  
 		} else {
 			// No user, print a link for the user to login
+			$this->pageTitle = 'First Page';
 			$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']);
-			echo '2 Please <a href="' . $login_url . '">login.</a>';
+			$this->render('login',array('login_url',$login_url));
 		}
-		exit;
-		$zfb->go(Yii::app()->params['fb']['pageurl']);
 		
-		$this->render('index',array(
+		if ( !empty($_POST) ) {
+			$this->render('success');
+		}
+		$this->render('form',array(
+			'user_profile'=>$user_profile,
 		));
 	}
 
