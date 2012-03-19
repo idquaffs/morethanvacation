@@ -1,1 +1,1 @@
-Facebook <a href="' . $login_url . '"> Confirm Button</a>
+Facebook <a href="<?php echo $login_url ?>"> Confirm Button</a>

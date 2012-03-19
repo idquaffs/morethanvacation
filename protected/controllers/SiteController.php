@@ -38,16 +38,16 @@ class SiteController extends Controller
 //				echo "Name: " . $user_profile['name'];
 
 			} catch(FacebookApiException $e) {
-				$this->pageTitle = 'First Page';
+				$this->pageTitle = 'First Page 1';
 				$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']); 
-				$this->render('login_url',array('login_url',$login_url));
+				$this->render('login',array('login_url'=>$login_url));
 				exit;
 			}
 		} else {
 			// No user, print a link for the user to login
-			$this->pageTitle = 'First Page';
+			$this->pageTitle = 'First Page 2';
 			$login_url = $facebook->getLoginUrl(Yii::app()->params['fb']['permission']);
-			$this->render('login_url',array('login_url',$login_url));
+			$this->render('login',array('login_url'=>$login_url));
 			exit;
 		}
 		
