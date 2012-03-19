@@ -1,0 +1,85 @@
+/************
+ * import
+ **************/
+@import url("reset.css");
+
+body{background-color:#F8F8F8;}
+div.flash-notify{position:relative;top:0px;width:50%;padding:3px;z-index:2;margin:auto;text-align:center;border-radius:0px 0px 10px 10px;background: #DFDFEF;box-shadow:#888 0px 1px 2px;border:1px solid #EEE;}
+/** notice **/
+.flash-success {  color: #220000; }
+.flash-error   {  color: #CF0000; font-weight:bold; }
+.flash-notice  {  color: #444; }
+
+div#logo{display:inline-block;width:300px;height:80px;font-size:40pt;margin:10px 20px;}
+div#logo-desc{font-size:8pt;}
+
+/************ wrap-user **************/
+div#wrap-user{width:100%;background-color:#000;box-shadow:#aaa 0px 1px 2px;}
+div#wrap-user div#userbar{width:990px;height:30px;background-color:#444;margin:auto;}
+
+div#userbar div#barnavi {color:#FFF;float:right;width:400px;font-size:8pt;}
+
+div#userbar div#barnavi #profile{width:100px;height:24px;padding:2px 8px;float:right;cursor:pointer;position:relative;}
+div#userbar div#barnavi #profile:hover{background-color:#666;}
+
+div#userbar div#barnavi #profile #picture-small{float:left;height:24px;border:1px solid #AAA;overflow:hidden;}
+div#userbar div#barnavi #profile #username{float:left;padding:6px 7px;overflow:hidden;}
+div#userbar div#barnavi div.sprt{float:right;border-left:1px solid #666;height:28px;margin-top:1px;}
+
+div#barnavi #profile #navi{display:none;z-index:999;background-color:#FFF;position:absolute;right:-2px;top:30px;border:1px solid #CCC;border-top:0;padding:6px 0;box-shadow:#CCC 0px 2px 4px;width:350px;}
+div#barnavi #profile #navi div#picture-big{float:left;width:96px;margin:20px;border:1px solid #CCC;overflow:hidden;}
+div#barnavi #profile #navi ul#root{float:left;width:160px;}
+
+#profile #navi ul li a{padding:3px 25px;font-size:10pt;}
+
+#longlogo{float:left;}
+
+/************ wrap **************/
+div#wrap-body{width:990px;margin:0 auto;background-color:#FFF;box-shadow:#CCC 0px 2px 4px;}
+div#wrap-top{margin:0;}
+div#wrap-head{position:fixed;top:0;width:100%;}
+
+div#wrap-top #logo{float:left;width:220px;}
+
+#nav-bottom{border-top:1px solid #CCC;}
+#nav-bottom ul li{float:left;margin:4px 25px;}
+#nav-bottom ul li a{color:#777;}
+
+
+/************
+ * HOME
+ **************/
+div#wrap-banner{height:200px;border-top:1px solid #CCC;border-bottom:1px solid #CCC;position:relative;background-color:#EFEFEF;}
+div#wrap-flag-category h2{margin-left:20px;}
+div#vid{width:480px;height:260px;border:1px solid #CCC;position:absolute;right:18px;top:-38px;background-color:black;box-shadow:#AAA 2px 2px 5px;}
+input#email{width:240px;float:left;padding:5px;border-radius:6px 0 0 6px;border-right:0px;}
+button#subscribe{width:90px;float:left;padding:5px;border-radius:0 6px 6px 0;height:31px;}
+
+div#user-login{float:right;margin:20px;position:relative;}
+div#user-login button#openlogin.bt2{width:180px;}
+div#user-login button#login.bt2{float:right}
+div#user-login div.loginbox{padding:20px;z-index:2;position:absolute;right:0;width:240px;display:none;}
+input.loginfield{padding:5px;width:228px;margin:4px 0;}
+
+
+/************ flag **************/
+div#flag-head{margin-left:21px;}
+div#flag-head div.flag-head{float:left;padding:5px 26px;border:1px solid #888;border-radius:5px 5px 0 0;cursor:pointer;background-color:#FFF;margin-left:-1px;font-size:13pt;}
+div#flag-head div.flag-head.active{border-bottom:1px solid #F9F9F9;padding-top:10px;margin-top:-5px;background-color:#F9f9f9;}
+div.flag{border:1px solid #888;margin:-1px 20px 10px 20px;background-color:#F9f9f9;}
+div.flag h2{display:none;}
+div.flag ul.content-list3 li{float:left;width:460px;height:130px;margin:6px 0px 0px 10px;background-color:#EFEFF6;}
+div.flag ul li div.thumb{padding:3px;border:1px solid #CCC;float:left;text-align:center;background-color:#FFF;box-shadow:#AAA 0px 1px 2px;}
+div.flag ul li a{color:#444;}
+div.flag ul li a:hover{text-decoration:none;}
+
+/************ category **************/
+div#nav-category-vertical ul.nolist > li > ul > li > ul > li {display:none;}
+#nav-category-horizontal{padding:20px;background-color:#DFDEDF;}
+#nav-category-horizontal > ul > li {float:left;width:180px;}
+#nav-category-horizontal > ul > li > a{color:#666;font-weight:bold;margin-bottom:8px;}
+
+#nav-category-vertical{padding:20px;background-color:#DFDEDF;}
+#nav-category-vertical > ul > li {width:100%;clear:both;}
+#nav-category-vertical > ul > li > a{color:#666;font-weight:bold;}
+#nav-category-vertical > ul > li > ul > li { float:left; margin:0 10px;margin-bottom:8px;}

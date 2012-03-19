@@ -1,0 +1,18 @@
+2012/03/19 12:35:47 [error] [php] Undefined variable: uid (/Users/yilliot/Sites/freelance/morethanvacation/protected/controllers/SiteController.php:51)
+Stack trace:
+#0 /Users/yilliot/Sites/yii/framework/web/CController.php(290): SiteController->runAction()
+#1 /Users/yilliot/Sites/yii/framework/web/CController.php(269): SiteController->runActionWithFilters()
+#2 /Users/yilliot/Sites/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#3 /Users/yilliot/Sites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/yilliot/Sites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/yilliot/Sites/freelance/morethanvacation/index-local-zz.php(15): CWebApplication->run()
+REQUEST_URI=/
+2012/03/19 12:35:47 [error] [php] Undefined variable: uid (/Users/yilliot/Sites/freelance/morethanvacation/protected/controllers/SiteController.php:51)
+Stack trace:
+#0 /Users/yilliot/Sites/yii/framework/web/CController.php(290): SiteController->runAction()
+#1 /Users/yilliot/Sites/yii/framework/web/CController.php(269): SiteController->runActionWithFilters()
+#2 /Users/yilliot/Sites/yii/framework/web/CWebApplication.php(276): SiteController->run()
+#3 /Users/yilliot/Sites/yii/framework/web/CWebApplication.php(135): CWebApplication->runController()
+#4 /Users/yilliot/Sites/yii/framework/base/CApplication.php(162): CWebApplication->processRequest()
+#5 /Users/yilliot/Sites/freelance/morethanvacation/index-local-zz.php(15): CWebApplication->run()
+REQUEST_URI=/
