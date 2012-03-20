@@ -38,7 +38,7 @@ return CMap::mergeArray(
 				'appsec'=>'f31fee519dd01004d3821d982726638e',
 				'permission'=>array(
 					'scope'=>'email,user_photos,user_birthday',
-					'redirect_uri' => 'http://morethanvacation.localhost/'
+					'redirect_uri' => 'http://www.morethanvacation.com/'
 				),
 			),'paging'=> array(
 				'pageSize'=>20,
