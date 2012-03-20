@@ -1,5 +1,5 @@
 <?php
-echo "<pre>"; print_r( $user_profile ); echo "</pre>"; //exit;
+echo "<pre>"; print_r( $user_profile ); echo "</pre>"; 
 ?>
 
 <div id="mc_embed_signup" class="clearfix hidden">
