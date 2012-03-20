@@ -2,7 +2,7 @@
 echo "<pre>"; print_r( $user_profile ); echo "</pre>"; 
 ?>
 
-<div id="mc_embed_signup" class="clearfix hidden">
+<div id="mc_embed_signup" class="clearfix">
     <form action="" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
         <div class="indicates-required">
             <span class="asterisk">*</span>
